@@ -22,7 +22,7 @@ for (int i = 0; i < 100; i++) {
 	if (calc(mid)) r = mid; else l = mid;	
 }
 
-// 把n本书分成m组，每组厚度之和<=size，是否可行
+// 把n本书分成连续的m组，每组厚度之和<=size，是否可行，如果不是连续的如何求解？感觉之前剩余的空间被浪费了
 bool valid(int size) {
 	int group = 1, rest = size;
 	for (int i = 1; i <= n; i++) {
